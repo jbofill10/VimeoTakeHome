@@ -1,0 +1,44 @@
+.WhiteBackground{
+    height: 50vh;
+    width:100%;
+    background-color: white;
+}
+
+.MonsoonContainer{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    height: 50vh;
+    flex-wrap: wrap-reverse;
+}
+
+.WordContainer{
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-direction: column;
+    margin-left: 1%;
+}
+
+.Monsoon{
+    margin-right: 1%;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.Caption{
+    max-width: 620px;
+    text-align: left;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+
+.Title{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+}

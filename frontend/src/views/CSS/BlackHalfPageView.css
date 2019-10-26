@@ -1,0 +1,50 @@
+.BlackBackground{
+    width: 100%;
+    background-color: #424242;
+}
+
+.BeamsContentContainer{
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 2%;
+}
+
+.BEAMS{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1%;
+}
+
+.BeamsTitle{
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    margin-left: auto;
+    font-size:25px;
+
+}
+
+.TextContainer{
+    flex-direction: column;
+    margin-left: 1%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.BeamsCaption{
+    color: white;
+    max-width: 620px;
+    text-align: left;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
