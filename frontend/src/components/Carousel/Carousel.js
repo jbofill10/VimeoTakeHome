@@ -10,8 +10,6 @@ export default class Carousel extends React.Component {
         this.state={
             images:[
                 "589972810.jpg",
-                "590587169.jpg",
-                "595198868.jpg"
             ],
             index: 0,
             xTrans: 0
@@ -22,7 +20,7 @@ export default class Carousel extends React.Component {
         return(
             <div className='CarouselBG'>
                 <LeftArrow goLeft={this.goLeft}/>
-                {this.state.images.map((img, i) => ( <CurrentImage key={i} image={img}/>))}
+                <CurrentImage image={this.state.images[0]}/>
                 <RightArrow goRight={this.goRight}/>
             </div>
         );

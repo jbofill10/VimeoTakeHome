@@ -11,11 +11,7 @@ export default class CurrentImage extends React.Component{
     render(){
         return(
             <div className='Image' style={{
-                backgroundImage: `url(${this.props.image})`,
-                backgroundRepeat: 'no-repeat',
-                backgroundPosition: '50% 60%',
-                height:'100px',
-                width:'100%'
+                background: `url(${this.props.image})`,
             }}/>
         );
     }
