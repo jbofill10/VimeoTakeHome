@@ -8,19 +8,19 @@ export default class Carousel extends React.Component {
     constructor(){
         super();
         this.state={
-            images:[
-                "589972810.jpg",
-            ],
-            index: 0,
-            xTrans: 0
+            images:null
         };
-    }   
+    }
+    
+    componentDidMount(){
+        this.getImages();
+    }
 
     render(){
         return(
             <div className='CarouselBG'>
                 <LeftArrow goLeft={this.goLeft}/>
-                <CurrentImage image={this.state.images[0]}/>
+                    {this.loadImages()}
                 <RightArrow goRight={this.goRight}/>
             </div>
         );
@@ -37,5 +37,30 @@ export default class Carousel extends React.Component {
         if(this.state.index === this.state.images.length-1) return this.setState({index: 0, xTrans:0})
 
         this.setState(prevState => ({index:prevState.index+1, xTrans:prevState.xTrans - document.querySelector('.Image').clientWidth}));
+    }
+
+    getImages = () => {
+        fetch('/api/video/science').then(response => response.json()).then(data => this.setState({images: data}));
+    }
+
+    loadImages = () => {
+        if(this.state.images === null){
+            return(
+                <CurrentImage image={null}/>
+            );
+        }
+        
+        else{
+            this.state.images.data.map((data, i) => {
+
+                return(
+
+                    <CurrentImage image={data.pictures.sizes[data.pictures.sizes.length-1].link}/>
+                    
+                )
+            });
+
+            console.log("done")
+        }
     }
 }

@@ -7,11 +7,6 @@ export default class WhiteHalfPageView extends React.Component{
 
     }
 
-    componentDidMount(){
-        console.log("mounted");
-        fetch('/api/video/science').then(response => response.json()).then(data => console.log(data));
-    }
-
     render(){
         return(
             <div className="WhiteBackground">
