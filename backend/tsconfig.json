@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "outDir": "build",
+        "module": "commonjs",
+        "types": ["node"],
+        "typeRoots": ["node_modules/@types"],
+        "importHelpers": true,
+        "allowJs": true,
+        "target": "es6"
+    },
+    "include": ["./src/**/*.ts"]
+}
