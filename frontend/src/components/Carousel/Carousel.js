@@ -1,8 +1,9 @@
 import React from 'react'
-import '../CSS/Carousel.css'
+import '../CSS/Carousel/Carousel.css'
+import CurrentImageBackground from './CurrentImageBackground'
 import LeftArrow from "./LeftArrow"
 import RightArrow from './RightArrow';
-import CurrentImage from './CurrentImage'
+import SlideImage from './SlideImage'
 
 export default class Carousel extends React.Component {
     constructor(){
@@ -18,11 +19,17 @@ export default class Carousel extends React.Component {
 
     render(){
         return(
-            <div className='CarouselBG'>
-                <LeftArrow goLeft={this.goLeft}/>
+        <div className='CarouselContainer'>
+            <LeftArrow goLeft={this.goLeft}/>
+            
+            <div className='SlideContainer'>
+                <div className='CarouselBG'>
                     {this.loadImages()}
-                <RightArrow goRight={this.goRight}/>
+                </div>
             </div>
+
+            <RightArrow goRight={this.goRight}/>
+        </div>
         );
     }
 
@@ -44,23 +51,18 @@ export default class Carousel extends React.Component {
     }
 
     loadImages = () => {
-        if(this.state.images === null){
-            return(
-                <CurrentImage image={null}/>
-            );
-        }
+        if(this.state.images === null) return;
         
         else{
-            this.state.images.data.map((data, i) => {
-
+            
+            return this.state.images.data.map(data => {
+                console.log(data.colors.secondary)
                 return(
 
-                    <CurrentImage image={data.pictures.sizes[data.pictures.sizes.length-1].link}/>
+                    <CurrentImageBackground primaryColor={data.colors.secondary} BGImage={data.pictures.sizes[data.pictures.sizes.length-1].link} DisplayImg={data.pictures.sizes[6].link}/>
                     
                 )
             });
-
-            console.log("done")
         }
     }
 }

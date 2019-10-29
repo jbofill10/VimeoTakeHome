@@ -20,7 +20,7 @@ class GetVideos{
     
             client.request({
                 method:'GET',
-                path: 'videos?query='+req.params.query,
+                path: 'ondemand/genres/comedy/pages',
                 page: 1,
             }, (err, body, status_code, headers) => {
                 if(err) {
@@ -29,7 +29,7 @@ class GetVideos{
                 }
                 
                 var response = vidProcess.reduceJson(body.data);
-    
+                
                 res.json(response);
     
             })

@@ -1,0 +1,9 @@
+.CarouselBG{
+    height: 65vh;
+    background-color: white;
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    /* overflow-x: hidden; */
+}
+

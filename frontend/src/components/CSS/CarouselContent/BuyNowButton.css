@@ -1,0 +1,36 @@
+.ButtonContainer{
+    margin-top: auto;
+    margin-right: 25%;
+    margin-left: 3%;
+    margin-bottom: auto;
+    padding-bottom: 2%;
+}
+
+.BuyNowButton{
+
+    position: relative;
+    height: 50px;
+    width: 120px;
+    border-radius: 6px 6px 6px 6px;
+
+    
+}
+
+
+.BuyNow{
+    color: white;
+    float: right;
+    margin-right: 7%;
+    margin-top: 11%;
+}
+
+
+
+.HexWrapper{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 30px;
+    width: 30px;
+}
