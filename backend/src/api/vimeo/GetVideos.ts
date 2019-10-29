@@ -20,7 +20,7 @@ class GetVideos{
     
             client.request({
                 method:'GET',
-                path: 'ondemand/genres/comedy/pages',
+                path: 'ondemand/genres/'+req.params.query+'/pages',
                 page: 1,
             }, (err, body, status_code, headers) => {
                 if(err) {

@@ -2,6 +2,7 @@ import React from 'react';
 import '../CSS/CarouselContent/BuyNowButton.css'
 import Hexagon from './Hexagon'
 
+
 export default class SlideImage extends React.Component{
     constructor(props){
         super(props);
@@ -16,7 +17,7 @@ export default class SlideImage extends React.Component{
                 }}>
                     
                     <div className='BuyNow'>Buy Now</div>
-
+                <Hexagon primaryColor={this.props.primaryColor}/>
                 </div>
             </div>
         )

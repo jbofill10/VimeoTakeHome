@@ -7,3 +7,12 @@
     /* overflow-x: hidden; */
 }
 
+.SlideAndArrowsContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 65vh;
+    width: 100vw;
+}
+

@@ -20,11 +20,26 @@ export default class CurrentImage extends React.Component{
                         backgroundSize:"cover"
                     }}/>
                 </div>
+                <div className='ImageEffect' 
+                style={{
+                    backgroundColor: this.props.primaryColor,
+                    }}/>
                 <div className='OnDemandContent'>
                     <div className='DisplayContainer'>
                         <img className='ImageDisplay' src={this.props.DisplayImg}/>
                     </div>
-                    <BuyNowButton primaryColor={this.props.primaryColor}/>  
+                <div className='ButtonAndWordsContainerlol'>
+                    <div className='WordContentContainer'>
+                        <div className='ContentTitle'>{this.props.title}</div>
+                        <div className='ContentDesc'>{this.props.description}</div>
+                    </div>
+
+                    <div className='TwoButtonWrapper'>
+                        <BuyNowButton primaryColor={this.props.primaryColor}/>  
+                        <WatchTrailerButton/>
+                    </div>
+                </div>
+
                 </div>
             </div>
         );

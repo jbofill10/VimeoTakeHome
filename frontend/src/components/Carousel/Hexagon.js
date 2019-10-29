@@ -1,14 +1,22 @@
 import React from 'react';
 import '../CSS/CarouselContent/Hexagon.css'
+import logo from '../../logo.svg'
 
 export default class Hexagon extends React.Component{
 
 
     render(){
         return(
-            <div className='HexContainer'>
-                <div className='hexagon'/>
-                <div className='square'/>
+            <div className='HexWrapper'>
+                <img className='hex' src={logo}/>
+                <div className='Triangle' 
+                style={{    
+                    
+                    borderTop: "9px solid transparent",
+                    borderBottom: "9px solid transparent",
+                    borderLeft: "13px solid "+this.props.primaryColor
+                    
+                    }}/>
             </div>
         )
     }

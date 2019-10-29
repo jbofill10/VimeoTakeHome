@@ -16,15 +16,16 @@
 .DisplayContainer{
     margin-top: auto;
     margin-bottom: auto;
-    filter:drop-shadow(0 0 35px black);
-    -webkit-filter: drop-shadow(0 0 35px black);
+    filter:drop-shadow(0 0 20px black);
+    -webkit-filter: drop-shadow(0 0 20px black);
+    margin-right: 2%;
+    margin-left: auto;
 }
 
 .ImageDisplay{
     
     margin-top: auto;
     margin-bottom: auto;
-    margin-right: 5%;
     height: 407px;
     width: 275px;
     mask-image: linear-gradient(to top, transparent 10%, black 35%);
@@ -44,4 +45,60 @@
     display: flex;
     justify-content: center;
     justify-items: center;
+    flex-wrap: wrap;
+}
+
+.ImageEffect{
+    height: 70vh;
+    width: 100vw;
+    position: absolute;
+    background-size: cover;
+    opacity: 0.6;
+    filter: blur(50px);
+    filter: brightness(60%)
+    
+}
+
+.TwoButtonWrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 30%;
+    align-items: center;
+}
+
+.WordContentContainer{
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 2%;
+
+}
+
+.ContentTitle{
+    color: white;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+.ContentDesc{
+    color: white;
+    max-height: 200px;
+    text-overflow: ellipsis;
+}
+
+.ButtonAndWordsContainerlol{
+    flex-direction: column;
+    text-align: left;
+    margin-top: 10%;
+    margin-bottom: auto;
+    width: 60%;
+    flex-wrap: wrap;
+    
+
 }

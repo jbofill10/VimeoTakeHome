@@ -1,0 +1,28 @@
+.WatchTrailerContainer{
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+.WatchTrailerButton{
+
+    position: relative;
+    height: 45px;
+    width: 120px;
+    border-radius: 6px 6px 6px 6px;
+    border-top: 1px lightgray;
+    border-left: 1px lightgray;
+    border-right: 1px lightgray;
+    border-bottom: 1px lightgray;
+    border-style: solid;
+
+}
+
+.WatchTrailer{
+    color: white;
+    font-weight: bold;
+    margin-top: 10%;
+}
+
