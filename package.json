@@ -1,0 +1,14 @@
+{
+    "name": "VimeoTakeHome",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "frontend-install": "cd frontend && npm i",
+        "backend-install": "cd backend && npm i",
+        "setup": "npm run frontend-install && npm run backend-install"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
+  
