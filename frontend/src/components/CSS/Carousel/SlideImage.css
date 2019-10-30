@@ -1,0 +1,37 @@
+.LeftArrowContainer{
+    position: absolute;
+    left: 18%;
+    bottom: 50%;
+    top: 40%;
+    font-size: 100px;
+    font-weight: 200;
+    color: white;
+    opacity: 0.4;
+    z-index: 1;
+    user-select: none;
+}
+
+.RightArrowContainer{
+    position: absolute;
+    right: 20%;
+    bottom: 50%;
+    top: 40%;
+    font-size: 100px;
+    font-weight: 200;
+    color: white;
+    opacity: 0.4;
+    z-index: 1;
+    user-select: none;
+}
+
+.LeftArrowContainer:hover{
+    opacity: 0.8;
+    color: #44BBFF;
+    cursor: pointer;
+}
+
+.RightArrowContainer:hover{
+    opacity: 0.8;
+    color: #44BBFF;
+    cursor: pointer;
+}

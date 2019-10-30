@@ -2,8 +2,10 @@ import React from 'react';
 import '../CSS/CarouselContent/BuyNowButton.css'
 import Hexagon from './Hexagon'
 
-
-export default class SlideImage extends React.Component{
+/**
+ * Component class for the "Buy Now" button that redirects to the movie page
+ */
+export default class BuyNowButton extends React.Component{
     constructor(props){
         super(props);
         this.state={};
@@ -12,15 +14,20 @@ export default class SlideImage extends React.Component{
         return(
             <div className='ButtonContainer'>
                  
-                <div className='BuyNowButton' style={{
+                <button onClick={this.onBuyNowClick} className='BuyNowButton' style={{
                     backgroundColor: this.props.primaryColor
                 }}>
                     
                     <div className='BuyNow'>Buy Now</div>
                 <Hexagon primaryColor={this.props.primaryColor}/>
-                </div>
+                </button>
             </div>
         )
     }
+    
+    onBuyNowClick = () => {
+        window.location.href=this.props.url;
+    }
+    
 
 }

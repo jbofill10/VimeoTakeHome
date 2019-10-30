@@ -1,5 +1,8 @@
 import React from 'react';
 
+/**
+ * The right arrow for the carousel
+ */
 export default class RightArrow extends React.Component{
     constructor(){
         super();
@@ -8,9 +11,9 @@ export default class RightArrow extends React.Component{
 
     render(){
         return(
-            <div className='RightArrow' onClick={this.props.goRight}>
+            <a className='RightArrow' onClick={this.props.goRight}>
                 {'>'}
-            </div>
+            </a>
         );
     }
 }

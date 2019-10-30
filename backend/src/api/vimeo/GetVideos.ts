@@ -3,7 +3,9 @@ import 'dotenv/config';
 import {Vimeo} from 'vimeo';
 import ProcessVideos from './ProcessVideos'
 
-
+/**
+ * Instantiates vimeo client and makes requests to get on demand content from vimeo.
+ */
 class GetVideos{
 
     

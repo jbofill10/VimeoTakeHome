@@ -4,7 +4,7 @@
     width: 100vw;
     position: relative;
     overflow:hidden;
-    
+    z-index: 2;
     
 }
 
@@ -18,8 +18,10 @@
     margin-bottom: auto;
     filter:drop-shadow(0 0 20px black);
     -webkit-filter: drop-shadow(0 0 20px black);
-    margin-right: 2%;
+    margin-right: 3.5%;
     margin-left: auto;
+    z-index: 2;
+    
 }
 
 .ImageDisplay{
@@ -29,6 +31,7 @@
     height: 407px;
     width: 275px;
     mask-image: linear-gradient(to top, transparent 10%, black 35%);
+    z-index: 9999;
 
 }
 
@@ -37,15 +40,17 @@
     position: absolute;
     height: 65vh;
     width: 100vw;
+    
 }
 
 .OnDemandContent{
     height: 70vh;
-    width: 100vw;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: center;
     justify-items: center;
-    flex-wrap: wrap;
 }
 
 .ImageEffect{
@@ -63,14 +68,13 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 30%;
-    align-items: center;
+    width: 80%;
+    
 }
 
 .WordContentContainer{
     flex-direction: column;
     position: relative;
-    width: 50%;
     text-align: left;
     margin-top: auto;
     margin-bottom: auto;
@@ -93,12 +97,11 @@
 }
 
 .ButtonAndWordsContainerlol{
-    flex-direction: column;
+    flex-direction: row;
     text-align: left;
     margin-top: 10%;
     margin-bottom: auto;
-    width: 60%;
-    flex-wrap: wrap;
-    
+    width: 40%;
+    margin-right: auto;
 
 }

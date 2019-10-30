@@ -2,6 +2,9 @@ import React from 'react';
 import '../CSS/CarouselContent/Hexagon.css'
 import logo from '../../logo.svg'
 
+/**
+ * Component class for the hexagon on the play button
+ */
 export default class Hexagon extends React.Component{
 
 

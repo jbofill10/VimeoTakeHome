@@ -1,7 +1,10 @@
 import React from 'react';
 import '../CSS/CarouselContent/WatchTrailerButton.css'
 
-export default class SlideImage extends React.Component{
+/**
+ * Component class for the "Watch Trailer" button
+ */
+export default class WatchTrailerButton extends React.Component{
     constructor(){
         super();
         this.state={};
@@ -10,14 +13,19 @@ export default class SlideImage extends React.Component{
     render(){
         return(
             <div className='WatchTrailerContainer'>
-                <div className='WatchTrailerButton'>
+                <button className='WatchTrailerButton' onClick={this.onWatchTrailerClick}>
                     <div className='WatchTrailer'>
                         Watch Trailer
                     </div>
                     
-                </div>
+                </button>
             </div>
         );
+    }
+    // I wanted to embed the vimeo player, but it would take too long to make a custom css modal.
+    onWatchTrailerClick = () => {
+        window.location.href=this.props.url;
+        
     }
 
 }

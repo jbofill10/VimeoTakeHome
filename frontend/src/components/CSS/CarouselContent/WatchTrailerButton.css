@@ -7,22 +7,24 @@
 }
 
 .WatchTrailerButton{
-
+    margin-bottom: 2.5%;
     position: relative;
-    height: 45px;
-    width: 120px;
+    height: 48px;
+    width: 130px;
     border-radius: 6px 6px 6px 6px;
-    border-top: 1px lightgray;
-    border-left: 1px lightgray;
-    border-right: 1px lightgray;
-    border-bottom: 1px lightgray;
-    border-style: solid;
+    border: 1px solid lightgray;
+    background: none;
 
 }
 
 .WatchTrailer{
     color: white;
     font-weight: bold;
-    margin-top: 10%;
+    font-size: 16px;
+    margin: auto auto auto auto;
+}
+
+.WatchTrailerButton:hover{
+    cursor: pointer;
 }
 

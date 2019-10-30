@@ -3,16 +3,17 @@
     background-color: white;
     display: flex;
     width: 100vw;
-    flex-direction: row;
-    /* overflow-x: hidden; */
+    position: relative;
+
 }
 
 .SlideAndArrowsContainer{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     height: 65vh;
-    width: 100vw;
+    position: relative;
+} 
+
+.SlideContainer{
+    position: relative;
+    overflow-x: hidden;
 }
 

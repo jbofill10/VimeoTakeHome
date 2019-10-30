@@ -1,5 +1,8 @@
 import React from 'react';
 
+/**
+ * The left arrow in the carousel
+ */
 export default class LeftArrow extends React.Component{
     constructor(props){
         super();
@@ -7,9 +10,9 @@ export default class LeftArrow extends React.Component{
     }
     render(){
         return (
-            <div className="LeftArrow" onClick={this.props.goLeft}>
+            <a className="LeftArrow" onClick={this.props.goLeft}>
                 {'<'}
-            </div>
+            </a>
             )
     }
 
